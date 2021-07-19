@@ -287,7 +287,7 @@ THREE.PLYLoader.prototype = Object.assign(Object.create(THREE.Loader.prototype),
   },
 })
 const loader = new THREE.PLYLoader()
-AFRAME.registerComponent('size-select' {
+AFRAME.registerComponent('size-select', {
   schema: {
     src: {},
     mesh: {default: true},
