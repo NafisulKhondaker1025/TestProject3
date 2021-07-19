@@ -325,7 +325,7 @@ AFRAME.registerComponent('size-select', {
     })
   },
 })
-AFRAME.registerPrimitive('ply-model' {
+AFRAME.registerPrimitive('ply-model' , {
   defaultComponents: {
     'ply-model': {},
   },
@@ -335,7 +335,7 @@ AFRAME.registerPrimitive('ply-model' {
     size: 'ply-model.size',
   },
 })
-AFRAME.registerComponent('ply-model'{
+AFRAME.registerComponent('ply-model' , {
   init() {
     const {data} = this
     const {el} = this
