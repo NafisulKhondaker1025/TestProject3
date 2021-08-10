@@ -40,16 +40,12 @@ body {
   background-color: rgba(0, 0, 0, 0.5) !important;
 }
 
-#loadImage {
-  top: 80% !important;
-}
-
 #loadBackground {
   background-color: black !important;
   background-image: url('assets/TechCoreAR_logo.png');
   background-position: 50% 30%;
   background-repeat: no-repeat;
-  background-size: 95%;
+  background-size: 170%;
 }
 
 .poweredby-img {
