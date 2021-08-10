@@ -1,6 +1,5 @@
 AFRAME.registerComponent('start-tracking', {
     init: function() {
-    const text = document.getElementById('loadingText')
     const container = document.getElementById('container')
     container.style.backgroundImage = "url('assets/stabilization.gif')"
  
@@ -13,7 +12,7 @@ AFRAME.registerComponent('start-tracking', {
       CIV.setAttribute('rotation', '0 -90 0')
       CIV.setAttribute('scale', '1 1 1')
       CIV.setAttribute('visible', 'true')
-      container.style.display = "none"
+      container.style.backgroundImage = "none"
     }, 10000)
   }
 })

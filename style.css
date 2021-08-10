@@ -52,8 +52,6 @@ body {
   display: none !important;
 }
 
-
-
 #sidebar {
   height: 100%;
   width: 0%;
@@ -104,7 +102,7 @@ img {
 }
 
 #sidebar .capturebtn {
-  top: 24%;
+  top: 8%;
 }
 
 #sidebar #help {
