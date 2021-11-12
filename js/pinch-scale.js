@@ -2,8 +2,8 @@
 
 AFRAME.registerComponent('pinch-scale', {
     schema: {
-        min: { default: 0.1 },
-        max: { default: 8 }
+        min: { default: 3 },
+        max: { default: 20 }
     },
     init: function () {
         this.initialScale = this.el.object3D.scale.clone()
