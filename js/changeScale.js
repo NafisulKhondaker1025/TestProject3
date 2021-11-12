@@ -7,13 +7,13 @@ AFRAME.registerComponent('change-scale', {
       const nextScale = () => {
         if (idx % 2 == 0) {
             console.log("clicked once");
-            model.setAttribute('scale', '5 5 5');
+            model.setAttribute('scale', '20 20 20');
             model.setAttribute('position', '0 0 0');
         }
         else {
             console.log("clicked twice");
             model.setAttribute('scale', '0.1 0.1 0.1');
-            model.setAttribute('position', '0 5 0');
+            model.setAttribute('position', '0 7 0');
         }
         idx = (idx + 1);
       }
