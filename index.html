@@ -17,17 +17,23 @@
     <script async src="//apps.8thwall.com/xrweb?appKey=sCOp9fPJvyYCZ4BF1X9I9r6qDEdv9GpwuMWahrmo7leQS4DfkL6qHmaBgUZj3U7PvbcJdV"></script>
 
     <!--Javascript for AR interaction acquired from 8th Wall-->
-    <script src="js\gesture-detector.js"></script>
+    <!-- <script src="js\gesture-detector.js"></script>
     <script src="js\hold-drag.js"></script>
     <script src="js\two-finger-spin.js"></script>
-    <script src="js\pinch-scale.js"></script>
+    <script src="js\pinch-scale.js"></script> -->
     <!--Custom Javascript to change opacity of 3D Object-->
-    <script src="js\change-opacity.js"></script>
+    <!-- <script src="js\change-opacity.js"></script> -->
+    <script src="js/changeScale.js"></script>
 </head>
 
 <body>
-    <a-scene gesture-detector
-             xrextras-almost-there
+
+    <div id="main">
+      <div id="changeScale" style="display: block; z-index: 10">
+          <img id="scaleImage" src="https://techcoreassets.blob.core.windows.net/images/lock.png">
+      </div>
+  </div>
+    <a-scene xrextras-almost-there
              xrextras-loading
              xrextras-runtime-error
              renderer="colorManagement: true"
@@ -63,18 +69,9 @@
                   hold-drag
                   two-finger-spin
                   pinch-scale
-                  change-opacity
                   scale="0.1 0.1 0.1"
                   shadow="receive: false">
         </a-entity>
-
-        <a-plane id="ground"
-                 rotation="-90 0 0"
-                 width="1000"
-                 height="1000"
-                 material="shader: shadow"
-                 shadow>
-        </a-plane>
     </a-scene>
 </body>
 </html>
