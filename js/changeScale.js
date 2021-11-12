@@ -6,16 +6,18 @@ AFRAME.registerComponent('next-button', {
       let idx = 2  // Start with the 2nd animation because the model starts with idle animation
       const nextScale = () => {
         if (idx % 2 == 0) {
+            console.log("clicked once");
             model.setAttribute('scale', '0.8 0.8 0.8');
             model.setAttribute('position', '0 0 0');
         }
         else {
+            console.log("clicked twice");
             model.setAttribute('scale', '0.1 0.1 0.1');
             model.setAttribute('position', '5 5 5');
         }
         idx = (idx + 1);
       }
-      changeButton.onclick = nextScale  // Switch to the next animation when the button is pressed.
+      changeButton.onclick = nextScale;  // Switch to the next animation when the button is pressed.
     },
   })
   
