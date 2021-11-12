@@ -8,12 +8,12 @@ AFRAME.registerComponent('change-scale', {
         if (idx % 2 == 0) {
             console.log("clicked once");
             model.setAttribute('scale', '0.8 0.8 0.8');
-            model.setAttribute('position', '0 0 0');
+            model.setAttribute('position', '5 5 5');
         }
         else {
             console.log("clicked twice");
             model.setAttribute('scale', '0.1 0.1 0.1');
-            model.setAttribute('position', '5 5 5');
+            model.setAttribute('position', '0 0 0');
         }
         idx = (idx + 1);
       }
