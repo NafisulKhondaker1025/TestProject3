@@ -1,4 +1,4 @@
-AFRAME.registerComponent('next-button', {
+AFRAME.registerComponent('change-scale', {
     init() {
       const model = document.getElementById('model')
       const changeButton = document.getElementById('changeScale')
