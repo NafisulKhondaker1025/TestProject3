@@ -13,7 +13,7 @@ AFRAME.registerComponent('change-scale', {
         else {
             console.log("clicked twice");
             model.setAttribute('scale', '0.1 0.1 0.1');
-            model.setAttribute('position', '0 10 0');
+            model.setAttribute('position', '0 5 0');
         }
         idx = (idx + 1);
       }
