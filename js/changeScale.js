@@ -2,7 +2,7 @@ AFRAME.registerComponent('change-scale', {
     init() {
       const model = document.getElementById('model')
       const changeButton = document.getElementById('changeScale')
-      changeButton.style.display = 'block'
+      changeButton.style.display = 'none'
       let idx = 2  // Start with the 2nd animation because the model starts with idle animation
       const nextScale = () => {
         if (idx % 2 == 0) {
